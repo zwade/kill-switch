@@ -1,7 +1,8 @@
 node_modules/
 dist/
+package/
 .rollup.cache
 *.tsbuildinfo
-package.crx
-package.pem
-package/
+*.crx
+*.pem
+*.zip

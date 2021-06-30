@@ -1,6 +1,6 @@
 {
     "name": "@killswitch/index",
     "scripts": {
-        "package": "rm -rf package && mkdir -p package && rsync -rR manifest.json images js/common/dist js/content-script/dist js/popup/dist package"
+        "package": "rm -rf package && mkdir -p package && rsync -rR manifest.json images js/common/dist js/content-script/{dist,styles} js/popup/dist package && bash -c 'cd package && zip ../killswitch.zip -r *'"
     }
 }
