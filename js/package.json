@@ -1,5 +1,8 @@
 {
     "private": true,
+    "scripts": {
+        "build": "bash -c 'cd common && yarn build' && bash -c 'cd content-script && yarn build' && bash -c 'cd popup && yarn build'"
+    },
     "workspaces": [
         "*"
     ]
