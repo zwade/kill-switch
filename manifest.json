@@ -1,0 +1,31 @@
+{
+  "name": "Killswitch",
+  "description": "Exercise stronger control over abusable APIs",
+  "version": "1.0",
+  "manifest_version": 3,
+  "author": "Zach Wade <zach@dttw.tech>",
+  "content_scripts": [
+      {
+          "run_at": "document_start",
+          "matches": ["*://*/*"],
+          "js": ["js/content-script/dist/embedder.js"]
+      }
+  ],
+  "web_accessible_resources": [
+      {
+        "resources": ["js/*"],
+        "matches": ["*://*/*"]
+      }
+  ],
+  "action": {
+    "default_popup": "js/popup/dist/index.html"
+  },
+  "permissions": [
+      "storage",
+      "tabs"
+  ],
+  "icons": {
+      "32": "images/icon-x1.png",
+      "128": "images/icon-x4.png"
+  }
+}

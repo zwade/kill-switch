@@ -1,0 +1,18 @@
+@use "~/src/variables.scss" as vars;
+
+.ks-text-input {
+    padding: vars.$component-padding;
+    border-radius: vars.$border-radius;
+    width: 100%;
+    border: 2px solid vars.$light-gray-2;
+    transition: border-color 100ms ease-in-out;
+    outline: none;
+
+    &:hover {
+        border-color: vars.$light-gray-1;
+    }
+
+    &:focus {
+        border-color: vars.$primary-22;
+    }
+}

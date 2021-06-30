@@ -1,0 +1,22 @@
+._ks_toast {
+    position: fixed;
+    top: calc(100vh - 64px);
+    left: 50%;
+    transform: translateX(-50%);
+    padding: 12px;
+    background: #333333;
+    border-radius: 20px;
+    color: #ffffff;
+    font-family: sans-serif;
+    border: 1px solid #ffffff;
+    z-index: 100000;
+
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity 250ms ease-in-out;
+}
+
+._ks_toast.active {
+    opacity: 1;
+    pointer-events: all;
+}

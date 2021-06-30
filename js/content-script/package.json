@@ -1,0 +1,20 @@
+{
+  "name": "@killswitch/content-script",
+  "version": "1.0.0",
+  "main": "dist/index.js",
+  "license": "MIT",
+  "scripts": {
+    "build": "rollup -c rollup.controller.js && rollup -c rollup.embedder.js",
+    "watch": "concurrently --kill-others 'rollup -w -c rollup.controller.js' 'rollup -w -c rollup.embedder.js'"
+  },
+  "devDependencies": {
+    "@rollup/plugin-commonjs": "^19.0.0",
+    "@rollup/plugin-node-resolve": "^13.0.0",
+    "@rollup/plugin-typescript": "^8.2.1",
+    "@types/chrome": "^0.0.145",
+    "concurrently": "^6.2.0",
+    "rollup": "^2.52.2",
+    "tslib": "^2.3.0",
+    "typescript": "^4.3.4"
+  }
+}

@@ -1,0 +1,85 @@
+@use "~/src/variables.scss" as vars;
+
+.editor-select, .save {
+    width: 100%;
+}
+
+.settings {
+    max-height: 450px;
+    display: flex;
+    flex-direction: column;
+    row-gap: 16px;
+    padding-top: 16px;
+
+    .search {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+    }
+
+    .feature-list {
+        display: flex;
+        flex-direction: column;
+        row-gap: 16px;
+        overflow: scroll;
+
+        select {
+            &.modified {
+                background: vars.$primary-22;
+
+                &:hover {
+                    background: vars.$primary-21;
+                }
+            }
+        }
+
+        .feature-toggle {
+            display: grid;
+            grid-template:
+                "name        toggle" max-content
+                "description toggle" max-content
+                / 1fr        128px;
+
+            &.hide-description {
+                grid-template:
+                    "name        toggle" max-content
+                    / 1fr        128px;
+
+                .description {
+                    display: none;
+                }
+            }
+
+            .name {
+                grid-area: name;
+                font-size: 18px;
+                margin-bottom: 8px;
+                display: flex;
+                align-items: center;
+
+                &.dirty {
+                    &::after {
+                        content: "\25CF";
+                        padding-left: 8px;
+                        font-size: 12px;
+                        color: vars.$primary-22;
+                    }
+                }
+            }
+
+            .description {
+                grid-area: description;
+                color: #505050;
+            }
+
+            .toggle {
+                grid-area: toggle;
+                align-self: center;
+
+                select {
+                    width: 100%;
+                }
+            }
+        }
+    }
+}

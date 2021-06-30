@@ -1,0 +1,19 @@
+@use "~/src/variables.scss" as vars;
+
+.button {
+    border: none;
+    border-radius: vars.$border-radius;
+    padding: vars.$component-padding;
+    background-color: vars.$primary-22;
+    cursor: pointer;
+
+    &:disabled {
+        background-color: vars.$light-gray-2;
+        cursor: unset;
+    }
+
+    &:hover:not(:disabled) {
+        background-color: vars.$primary-21;
+    }
+}
+

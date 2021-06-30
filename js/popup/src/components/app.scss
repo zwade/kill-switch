@@ -1,0 +1,19 @@
+@use "~/src/variables.scss" as vars;
+
+select {
+    border: none;
+    border-radius: vars.$border-radius;
+    padding: vars.$component-padding;
+    background-color: vars.$light-gray-2;
+    color: vars.$off-black;
+    transition: background-color 100ms ease-in-out;
+    cursor: pointer;
+
+    &:hover {
+        background-color: vars.$light-gray-1;
+    }
+}
+
+body {
+    width: 384px;
+}

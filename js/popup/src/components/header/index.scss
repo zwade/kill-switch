@@ -1,0 +1,14 @@
+.header {
+    font-size: 32px;
+    display: flex;
+    flex-direction: row;
+    align-items: baseline;
+    justify-content: center;
+    margin: 16px;
+
+    .icon {
+        max-height: 32px;
+        width: 16px;
+        align-self: center;
+    }
+}
