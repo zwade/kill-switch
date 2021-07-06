@@ -25,6 +25,7 @@
     "webpack-html-plugin": "^0.1.1"
   },
   "scripts": {
-    "build": "MODE=production webpack"
+    "build": "MODE=production webpack",
+    "watch": "MODE=development webpack --watch"
   }
 }
