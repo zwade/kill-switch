@@ -1,7 +1,7 @@
 {
   "name": "Killswitch",
   "description": "Exercise stronger control over abusable APIs",
-  "version": "1.0",
+  "version": "1.1",
   "manifest_version": 3,
   "author": "Zach Wade <zach@dttw.tech>",
   "content_scripts": [
