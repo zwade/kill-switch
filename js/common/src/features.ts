@@ -47,7 +47,7 @@ export const FeatureDescription: FeatureDescription = {
     [Feature.Clipboard]: {
         name: "Clipboard",
         default: Option.Notify,
-        description: "The Clipboard API can allow applications the ability to add change or read the current value of the clipboard."
+        description: "The Clipboard API can allow applications the ability to change or read the current value of the clipboard."
     },
     [Feature.Orientation]: {
         name: "Device Orientation",
@@ -62,7 +62,7 @@ export const FeatureDescription: FeatureDescription = {
     [Feature.AmbientLight]: {
         name: "Ambient Light Sensor",
         default: Option.Notify,
-        description: "While coares, the abient light sensor can provide webpages with an approximation of how much light is in the environment. Notably, this could also include light produced by the device itself."
+        description: "While coarse, the ambient light sensor can provide webpages with an approximation of how much light is in the environment. Notably, this could also include light produced by the device itself."
     },
     [Feature.PaymentRequest]: {
         name: "Payment Request",
