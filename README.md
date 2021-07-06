@@ -25,22 +25,19 @@ For an overview of the motivations underpinning it, see [this blog post](https:/
 To get started working with Kill Switch, install `node` and `yarn`, and then run
 
 ```bash
-cd js
-yarn
+cd js && yarn
 ```
 
 To create a production build in the root directory, run
 
 ```bash
-cd js
-yarn build
+cd js && yarn build
 ```
 
 To create a live-updating build (also in the root directory), run
 
 ```bash
-cd js
-yarn watch
+cd js && yarn watch
 ```
 
 Finally, to turn a production build into a clean zip (no source files, no dependencies) run from the root directory
